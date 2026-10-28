@@ -1,0 +1,38 @@
+{
+  "construccion_desde_zip_originales": "verificada",
+  "filas": 19286,
+  "columnas": 34,
+  "comparacion_con_base_usada_en_modelos": "coinciden todas las filas, columnas y valores; tolerancia numérica 1e-12",
+  "tablas": [
+    {
+      "tabla": "vivienda",
+      "filas": 44599,
+      "columnas_usadas": 10,
+      "duplicados": 0,
+      "llaves_vacias": 0
+    },
+    {
+      "tabla": "personas",
+      "filas": 115145,
+      "columnas_usadas": 13,
+      "duplicados": 0,
+      "llaves_vacias": 0
+    },
+    {
+      "tabla": "educacion",
+      "filas": 106958,
+      "columnas_usadas": 17,
+      "duplicados": 0,
+      "llaves_vacias": 0
+    },
+    {
+      "tabla": "sumaria",
+      "filas": 33702,
+      "columnas_usadas": 9,
+      "duplicados": 0,
+      "llaves_vacias": 0
+    }
+  ],
+  "archivo_reproducible": "src/construir_datos.py",
+  "datos_sinteticos": false
+}
