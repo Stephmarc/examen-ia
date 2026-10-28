@@ -1,0 +1,35 @@
+﻿variable,fuente_o_formula,definicion,uso
+CONGLOME,ENAHO 200,Código de conglomerado conservado como texto,grupo; nunca predictor
+VIVIENDA,ENAHO 200,Código de vivienda conservado como texto,llave
+HOGAR,ENAHO 200,Código de hogar conservado como texto,llave
+CODPERSO,ENAHO 200,Código de persona conservado como texto,llave
+UBIGEO,ENAHO 200,Código distrital de seis dígitos,unión y sensibilidad espacial
+edad,P208A,"Edad cumplida en años, entre 6 y 17",Componente del objetivo rezago; EXCLUIDO de X supervisado
+sexo,P207,1 hombre; 2 mujer,predictor categórico
+lengua_materna,P300A,Quechua 1; aimara 2; castellano 4; otras originarias 3 y 10–17; resto otra/no declarada,predictor categórico; auditoría de equidad
+rural,ESTRATO,1 si estrato 6–8; 0 si 1–5; MINEDU área 2 rural y 1 urbana,predictor
+electricidad,P1121,Indicador de alumbrado eléctrico 0/1; fuera de catálogo a nulo,predictor
+internet_hogar,P1144,0 sin conexión; 1 con conexión. No se interpreta como uso ni calidad,predictor solo clasificación; componente índice
+pobreza,POBREZA,1 extrema; 2 no extrema; 3 no pobre,predictor categórico; no es objetivo
+miembros_hogar,MIEPERHO,Número de miembros del hogar; valores <=0 a nulo,predictor
+gasto_pc_mensual,GASHOG2D / MIEPERHO / 12,Gasto anual deflactado convertido a soles por persona y mes; negativos a nulo,descriptiva
+ingreso_pc_mensual,INGHOG2D / MIEPERHO / 12,Ingreso anual deflactado convertido a soles por persona y mes; negativos a nulo,descriptiva
+log_gasto_pc_mensual,log1p(gasto_pc_mensual),Logaritmo natural de uno más el gasto per cápita mensual,predictor
+log_ingreso_pc_mensual,log1p(ingreso_pc_mensual),Logaritmo natural de uno más el ingreso per cápita mensual,predictor
+altitud,ENAHO 100 ALTITUD,Altitud contextual en metros; fuera de -100 a 6000 a nulo,predictor; no ubicación individual publicada
+n_escuelas,ESCALE Padron,Número de servicios activos de primaria/secundaria por distrito y área,predictor contextual
+ratio_alumno_docente,ESCALE TALUM / TDOC,Suma de alumnos dividida por suma de docentes por distrito y área; denominador cero a nulo,predictor contextual
+proporcion_publica,ESCALE GESTION,Proporción de servicios con gestión 1 o 2; 3 privada,predictor contextual
+latitud_media,ESCALE NLAT_IE,Media de latitudes de servicios escolares del distrito y área; rango -19 a 1,predictor contextual
+longitud_media,ESCALE NLONG_IE,Media de longitudes de servicios escolares del distrito y área; rango -82 a -68,predictor contextual
+peso_poblacional,ENAHO 200 FACPOB07,Factor anual poblacional positivo; no es un ponderador longitudinal panel validado,sensibilidad de métricas; nunca predictor
+peso_hogar_referencia,Sumaria FACTOR07,Factor anual de hogar conservado para trazabilidad,metadato; nunca predictor ni peso individual
+no_uso_internet,P314A,1 si no usó internet mes anterior (2); 0 si usó (1),Descriptivo y componente de índice complementario; no equivale a exclusión efectiva
+indice_brecha,0.5 * no_uso_internet + 0.5 * (1-internet_hogar),"Índice heurístico con valores 0, 0.5, 1; no oficial ni validado",objetivo regresión; componentes excluidos de X
+contexto_encontrado,Indicador de unión contextual,1 si UBIGEO y área encuentran padrón; 0 si no,auditoría; no predictor
+grado_acumulado,P308C si primaria; 6+P308B si secundaria,Primaria grado 1–6; secundaria 7–11. Solo valores válidos.,Componente del objetivo; EXCLUIDO de X
+edad_normativa,grado_acumulado + 5,Normativa aproximada: 6–11 primaria y 12–16 secundaria. No calcula edad al 31 de marzo.,Componente del objetivo; EXCLUIDO de X
+anios_rezago,"max(edad - edad_normativa, 0)",Años de desfase por edad declarada. Nulo si grado inválido; esos registros no se modelan.,Variable de clustering; EXCLUIDA de X clasificación
+rezago_escolar,anios_rezago > 0,Clase 1 con desfase positivo; 0 en caso contrario. Aproximación operativa solicitada por la guía.,"Objetivo principal clasificación, Opción A"
+rezago_dos_mas,anios_rezago >= 2,Umbral alternativo de dos o más años. No equivale exactamente a tasa oficial sin fecha al 31 de marzo.,Sensibilidad descriptiva; EXCLUIDO de X
+frecuencia_tic,P314D; P314A,"3 diaria (1), 2 semanal (2), 1 mensual o menor (3/4); 0 cuando P314A=2. Usuarios con frecuencia omitida permanecen nulos.","Variable de clustering; frecuencia ordinal, no horas"
