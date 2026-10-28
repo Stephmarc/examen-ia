@@ -1,0 +1,72 @@
+[
+  {
+    "archivo": "IA\\Guía de Evaluación - Proyecto IA_ Brecha Digital y Educación 2025 (ENAHO - ESCALE).pdf",
+    "bytes": 262223,
+    "sha256": "d1298ca71891f7f2418d61c3be5f5b6e1e0da40732663b40394dda14f444622c"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Ficha.pdf",
+    "bytes": 263082,
+    "sha256": "ed9bc2710933c9a65eaa68c7560bc11caf47796b4336a5fae9de6f423ed70b04"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Modulo1474.zip",
+    "bytes": 48251194,
+    "sha256": "d698d9e66bf8fb238b811230df03f0bc29f0d6a0828674f5c7f0d0d2c1452e72"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Modulo1475.zip",
+    "bytes": 67395695,
+    "sha256": "ca4b74967d97f4439c8fc9140fb0465c6511956ed3b63b6904a7230ddf7123b2"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Modulo1476.zip",
+    "bytes": 92604906,
+    "sha256": "2bfada07894a372bcb55e26a05a8ce7e6278e9caaf468e92ca9b7c6f35f56d2d"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Modulo1477.zip",
+    "bytes": 125271015,
+    "sha256": "8c229ce0ee760144c9a7699309ba882e1328ff669d7addf9fce6cb30f726b465"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Modulo1478.zip",
+    "bytes": 93533545,
+    "sha256": "8ae563bff68ceecd0e508415cadabfea05f4280192ac779493fd7fcfd972ea91"
+  },
+  {
+    "archivo": "IA\\INEI\\1041-Modulo1479.zip",
+    "bytes": 41218720,
+    "sha256": "5b7506e77420a79c4b70ce8eff1d149dab4283b74a4cb2457c1131cf7abc0617"
+  },
+  {
+    "archivo": "IA\\MINEDU\\00_Diccionario de datos_CE_2025.pdf",
+    "bytes": 13686870,
+    "sha256": "070cab8f1fb1bf72d8891960bf6a3dbd96a232a5451fece7765e7b213fbd2bba"
+  },
+  {
+    "archivo": "IA\\MINEDU\\00_Diccionario de datos_LE_2025.pdf",
+    "bytes": 2525733,
+    "sha256": "a6c9df3047540d3922c2d30bd6800ddb8347b700dba5941b2d6f06cd0aef5378"
+  },
+  {
+    "archivo": "IA\\MINEDU\\00_Padlocal.zip",
+    "bytes": 2510076,
+    "sha256": "e92f8cae6136acb45167615dc586883041ff7da1161394c0b87db1f417fe708e"
+  },
+  {
+    "archivo": "IA\\MINEDU\\00_Padron.zip",
+    "bytes": 11238339,
+    "sha256": "18192e82687bb3842d7ab0f69f33952e9cfbff6963fc0c8a656c4887239174b7"
+  },
+  {
+    "archivo": "IA\\MINEDU\\01_Matricula_01.zip",
+    "bytes": 19283,
+    "sha256": "3b3180f300caac269060a89c4d8a682f7d10be87c93c1849ee04933259b7edb6"
+  },
+  {
+    "archivo": "IA\\MINEDU\\04_Docente_01.zip",
+    "bytes": 19283,
+    "sha256": "de733cf43df362165224adbb372b4aed44dfa794e8bac368c2e85a9c36896eb1"
+  }
+]
