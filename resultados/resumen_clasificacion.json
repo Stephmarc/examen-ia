@@ -1,0 +1,64 @@
+{
+  "ganador_cv": "MLP",
+  "n_train": 15498,
+  "n_test": 3788,
+  "grupos_train": 3760,
+  "grupos_test": 941,
+  "interseccion_grupos": 0,
+  "prevalencia_test": 0.38595564941921856,
+  "matriz_confusion": [
+    [
+      1480,
+      846
+    ],
+    [
+      878,
+      584
+    ]
+  ],
+  "test_ganador": {
+    "modelo": "MLP",
+    "ROC_AUC": 0.5211606028561917,
+    "PR_AUC_AP": 0.40916913454702164,
+    "PR_AUC_trapecios": 0.4087097179812993,
+    "F1_macro": 0.5179056332554957,
+    "accuracy": 0.5448785638859557,
+    "precision": 0.4083916083916084,
+    "recall": 0.399452804377565,
+    "Brier": 0.24831924394473318
+  },
+  "IC95_bootstrap_grupos": {
+    "ROC_AUC": [
+      0.49784783787607456,
+      0.5415119552439277
+    ],
+    "PR_AUC_AP": [
+      0.3773812669548783,
+      0.43489189805862755
+    ],
+    "F1_macro": [
+      0.5000837264805633,
+      0.5359318755971348
+    ]
+  },
+  "sensibilidad_separacion_distrito": {
+    "ROC_AUC": 0.5282474532101398,
+    "PR_AUC_AP": 0.3970671104476633,
+    "PR_AUC_trapecios": 0.3962984132197862,
+    "F1_macro": 0.5049340476285068,
+    "accuracy": 0.5059445178335535,
+    "precision": 0.40110395584176634,
+    "recall": 0.6055555555555555,
+    "Brier": 0.2543498580263903
+  },
+  "umbral": 0.5,
+  "ponderacion": "Entrenamiento: balance de clases del fold; sensibilidad de evaluación con FACPOB07. FACTOR07 de hogar se conserva, no se usa como predictor. No se afirman totales nacionales del panel.",
+  "objetivo": "rezago_escolar: edad declarada superior a normativa aproximada de grado",
+  "variables_excluidas_por_fuga": [
+    "edad",
+    "grado_acumulado",
+    "edad_normativa",
+    "anios_rezago",
+    "rezago_dos_mas"
+  ]
+}

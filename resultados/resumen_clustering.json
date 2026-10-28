@@ -1,0 +1,19 @@
+{
+  "ganador": [
+    "KMeans",
+    4
+  ],
+  "metricas_train": {
+    "algoritmo": "KMeans",
+    "k": 4,
+    "silhouette": 0.29444173583280314,
+    "Davies_Bouldin": 1.2925057382008713,
+    "Calinski_Harabasz": 422.3086753556172
+  },
+  "PCA_varianza": [
+    0.3310377807444872,
+    0.1432142125984582
+  ],
+  "seleccion": "Silueta máxima sobre train; muestra fija 1800. Test solo se asigna con predict, no selecciona k.",
+  "nota": "El rezago se incluye como variable de perfil según la guía; sus diferencias entre clusters son parcialmente definitorias, no una validación predictiva. Los clusters no son predictores de clasificación."
+}

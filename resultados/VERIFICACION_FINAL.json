@@ -1,0 +1,23 @@
+{
+  "estado": "verificado",
+  "revision": "guia completa: siete páginas, 34 puntos auditados",
+  "filas": 19286,
+  "columnas": 34,
+  "target": "rezago_escolar aproximado por edad y grado",
+  "llaves_duplicadas": 0,
+  "interseccion_conglomerados": 0,
+  "celdas_codigo_ejecutadas": 8,
+  "errores_notebook": 0,
+  "modelos": [
+    "Logistica",
+    "RandomForest",
+    "XGBoost",
+    "LightGBM",
+    "MLP"
+  ],
+  "corridas_cv": 50,
+  "predicciones_recargadas_coinciden": true,
+  "clustering_corridas": 10,
+  "SHAP_aditividad": 6.661338147750939e-16,
+  "advertencia": "Cumplimiento metodológico no garantiza nota ni poder predictivo. Modelo cerca del azar; limitaciones de fuentes documentadas."
+}

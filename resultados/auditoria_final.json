@@ -1,0 +1,36 @@
+{
+  "filas": 19286,
+  "conglomerados": 4701,
+  "distritos": 1186,
+  "no_uso": 5078,
+  "prevalencia": 0.377216633827647,
+  "con_rezago": 7275,
+  "criterio_rezago": "Edad declarada > grado acumulado + 5; aproximación sin fecha de nacimiento al 31 de marzo; sensibilidad >=2 años disponible.",
+  "cobertura_minedu": 0.9808669501192575,
+  "pesos_validos": 19286,
+  "fechas_padron": {
+    "29-10-2025": 112724
+  },
+  "flujo": [
+    {
+      "filtro": "Base 6 a 17 años",
+      "n": 24195
+    },
+    {
+      "filtro": "Residentes habituales",
+      "n": 23345
+    },
+    {
+      "filtro": "Matriculados primaria o secundaria",
+      "n": 19286
+    },
+    {
+      "filtro": "Respuesta válida sobre uso de internet",
+      "n": 19286
+    },
+    {
+      "filtro": "Grado actual válido para definir rezago",
+      "n": 19286
+    }
+  ]
+}

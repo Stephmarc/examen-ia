@@ -1,0 +1,20 @@
+{
+  "fechas_actualizacion": {
+    "29-10-2025": 112724
+  },
+  "filas": 112724,
+  "gestion": {
+    "1": 85782,
+    "3": 25623,
+    "2": 1319
+  },
+  "area": {
+    "2": 63378,
+    "1": 49346
+  },
+  "imputado": {
+    "1_INFORMANTE": 109142,
+    "3_IMPUTADO_TOTAL": 3407,
+    "2_IMPUTADO_PARCIAL": 175
+  }
+}

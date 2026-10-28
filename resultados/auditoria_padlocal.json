@@ -1,0 +1,23 @@
+{
+  "locales": 69642,
+  "servicios": 112724,
+  "locales_duplicados": 0,
+  "cobertura_local": 0.8432631915120117,
+  "gestion_catalogo": [
+    {
+      "GESTION": "1",
+      "D_GESTION": "Pública de gestión directa"
+    },
+    {
+      "GESTION": "3",
+      "D_GESTION": "Privada"
+    },
+    {
+      "GESTION": "2",
+      "D_GESTION": "Pública de gestión privada"
+    }
+  ],
+  "uso": "Auditoría de local escolar. Contexto final se calcula con el geocódigo del servicio del padrón; no se utilizan direcciones ni datos de contacto.",
+  "servicios_sin_local": 17668,
+  "discordancias_geocodigo_en_encontrados": 1
+}

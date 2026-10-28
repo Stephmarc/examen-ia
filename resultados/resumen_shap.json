@@ -1,0 +1,15 @@
+{
+  "modelo": "MLP",
+  "n_explicados": 402,
+  "unidad": "probabilidad",
+  "error_max_aditividad": 6.661338147750939e-16,
+  "alto": {
+    "probabilidad": 0.7626002346594665,
+    "clase_real": 1
+  },
+  "bajo": {
+    "probabilidad": 0.28004397877925674,
+    "clase_real": 0
+  },
+  "advertencia": "Dependence muestra asociación entre característica y contribución; colorear por otra variable no equivale a calcular SHAP interaction values. No hay inferencia causal."
+}

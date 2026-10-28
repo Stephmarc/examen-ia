@@ -1,0 +1,11 @@
+{
+  "objetivo": "Índice operativo 0.5*(no uso internet)+0.5*(sin internet doméstico). Valores 0, 0.5 y 1; escala acotada, no índice oficial ni capacidad digital observada.",
+  "predictores_excluidos": [
+    "internet_hogar",
+    "P314A y derivados",
+    "indice_brecha",
+    "no_uso_internet"
+  ],
+  "n_test": 3788,
+  "nota": "Se añade para cubrir regresión del sílabo; clasificación es el problema principal de la guía. El diseño transversal estima asociación, no pronóstico temporal."
+}
