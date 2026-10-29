@@ -1,0 +1,17 @@
+[
+  {
+    "archivo": "01_datos_y_auditoria.ipynb",
+    "celdas_ejecutadas": 3,
+    "salidas": 2
+  },
+  {
+    "archivo": "02_PROYECTO_COMPLETO.ipynb",
+    "celdas_ejecutadas": 8,
+    "salidas": 38
+  },
+  {
+    "archivo": "03_AUDITORIA_LIMPIEZA.ipynb",
+    "celdas_ejecutadas": 2,
+    "salidas": 5
+  }
+]

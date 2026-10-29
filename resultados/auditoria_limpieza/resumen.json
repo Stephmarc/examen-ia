@@ -1,0 +1,10 @@
+{
+  "filas": 19286,
+  "columnas": 34,
+  "pruebas": 65,
+  "aprobadas": 65,
+  "fallos": [],
+  "sin_contexto_minedu": 369,
+  "sha256_parquet": "543c7fd5a255d6b7a97fcff7fde88ed24eef8a70f0ab48c11e85e789e9e970c8",
+  "nota": "Los faltantes se conservan; el pipeline los imputa dentro de cada entrenamiento. Las pruebas no certifican la exactitud de las respuestas originales ni resuelven limitaciones del panel o edad normativa."
+}

@@ -31,3 +31,8 @@ El MLP fue seleccionado por AP de validación. En prueba obtuvo ROC-AUC 0.521, A
 Se seleccionó 2025 de archivos ENAHO panel 2021–2025. El padrón MINEDU tiene fecha de actualización 29/10/2025. El indicador de rezago usa edad declarada y grado, por lo que aproxima la referencia normativa. Dos archivos del Drive tenían HTML en lugar de datos; se utilizaron los totales disponibles del padrón. Detalles en `LIMITACIONES_DE_LAS_FUENTES.md`.
 
 La revisión de la guía está en `AUDITORIA_GUIA_PUNTO_POR_PUNTO.md`. Las instrucciones para la exposición se encuentran en `GUIA_PARA_SUSTENTAR.md`.
+
+
+## Entrega completa revisada
+
+Esta carpeta incluye los cuatro ZIP ENAHO utilizados y el padrón MINEDU. Los tres notebooks conservan salidas ejecutadas: construcción desde originales, análisis principal y auditoría. Las pruebas no eliminan las limitaciones del panel, la definición aproximada del rezago o el desempeño predictivo. Consultar CIERRE_DE_ENTREGA.md.

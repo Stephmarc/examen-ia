@@ -1,0 +1,67 @@
+﻿prueba,pasa,detalle
+Estructura data/raw,True,
+Estructura data/processed,True,
+Estructura notebooks,True,
+Estructura src,True,
+Dependencia numpy,True,2.5.4
+Dependencia pandas,True,3.1.0
+Dependencia scikit-learn,True,1.9.1
+Dependencia matplotlib,True,3.11.2
+Dependencia shap,True,0.54.1
+Dependencia xgboost,True,3.4.1
+Dependencia pyarrow,True,26.0.0
+Dependencia joblib,True,1.6.0
+Dependencia nbformat,True,5.11.1
+Dependencia nbclient,True,0.11.0
+Dependencia ipykernel,True,7.4.0
+Dependencia reportlab,True,4.4.9
+Dependencia pypdf,True,6.10.0
+Dependencia lightgbm,True,4.7.0
+Sintaxis auditar_limpieza.py,True,
+Sintaxis construir_datos.py,True,
+Sintaxis generar_informe.py,True,
+Sintaxis pipeline.py,True,
+Principal ejecutado con salidas,True,8
+Sin errores de notebook,True,
+Semilla fija,True,
+Baseline y cuatro avanzados,True,
+50 corridas y cinco folds,True,
+Ganador elegido por CV,True,
+Modelo guardado reproduce probabilidades,True,
+Métrica recalculada ROC_AUC,True,
+Métrica recalculada PR_AUC_AP,True,
+Métrica recalculada PR_AUC_trapecios,True,
+Métrica recalculada F1_macro,True,
+Métrica recalculada accuracy,True,
+Métrica recalculada precision,True,
+Métrica recalculada recall,True,
+Métrica recalculada Brier,True,
+Dos algoritmos y diez corridas clustering,True,
+Tres métricas de clustering,True,
+Perfiles nombrados y con acciones,True,
+Clusters cubren toda la base,True,
+SHAP explica el modelo guardado,True,
+Waterfall extremos correctos,True,
+Figura válida calibracion,True,
+Figura válida clusters_pca,True,
+Figura válida curvas_roc_pr,True,
+Figura válida diagrama_cruces,True,
+Figura válida matriz_confusion,True,
+Figura válida residuos_regresion,True,
+Figura válida seleccion_clusters,True,
+Figura válida shap_beeswarm,True,
+Figura válida shap_caso_alto,True,
+Figura válida shap_caso_bajo,True,
+Figura válida shap_dependencia_1,True,
+Figura válida shap_dependencia_2,True,
+Figura válida siluetas,True,
+Artículo de cuatro a seis páginas,True,6
+Contenido informe Resumen,True,
+Contenido informe Abstract,True,
+Contenido informe Introducción,True,
+Contenido informe Metodología,True,
+Contenido informe Clustering,True,
+Contenido informe SHAP,True,
+Contenido informe Conclusiones,True,
+Métricas vigentes en informe,True,
+"PDF contiene diagrama, ROC/PR, dos figuras clustering y cinco SHAP",True,"[0, 1, 1, 2, 5, 0]"

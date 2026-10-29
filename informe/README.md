@@ -1,3 +1,3 @@
-# Informe
+# informe
 
-Artículo de seis páginas y su fuente editable en Markdown.
+Artículo de seis páginas y fuente editable.

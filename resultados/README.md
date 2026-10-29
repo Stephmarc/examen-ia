@@ -1,3 +1,3 @@
-# Resultados
+# resultados
 
-Corridas, métricas, particiones, perfiles, predicciones y modelo guardado.
+Corridas, métricas, particiones, perfiles, predicciones y modelo.
