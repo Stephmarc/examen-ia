@@ -1,38 +1,34 @@
-# Examen de Inteligencia Artificial
+# Brecha digital y rezago escolar — Inteligencia Artificial
 
-**Jannys Graciela Navarro · Ingeniería de Sistemas · Universidad Peruana Unión**
+**Jannys Graciela Navarro Acrota · VIII ciclo · Universidad Peruana Unión, Juliaca**  
+Docente: Ángel Rosendo Coaquira · Datos: corte 2025
 
-Análisis de brecha digital y rezago escolar con el corte 2025 de ENAHO y el padrón ESCALE. La base final contiene 19 286 escolares de 6 a 17 años y 34 columnas.
+## Revisar la entrega
 
-## Contenido
+- [Informe con carátula](informe/Informe_Brecha_Digital_U2.pdf): artículo de seis páginas más portada.
+- [Notebook principal ejecutado](notebooks/02_PROYECTO_COMPLETO.ipynb): modelos, clustering, métricas y SHAP.
+- [Dataset limpio CSV](data/processed/dataset_enaho_escale_2025.csv) · [Parquet](data/processed/dataset_enaho_escale_2025.parquet) · [Diccionario](data/processed/diccionario_variables.csv).
+- [Construcción desde fuentes](notebooks/01_datos_y_auditoria.ipynb) · [Pruebas de limpieza](notebooks/03_AUDITORIA_LIMPIEZA.ipynb).
 
-- `notebooks/01_datos_y_auditoria.ipynb`: construcción desde los originales.
-- `notebooks/02_PROYECTO_COMPLETO.ipynb`: análisis ejecutado, modelos, clustering y SHAP.
-- `src/`: código de construcción, entrenamiento e informe.
-- `data/processed/`: base limpia, diccionario y tablas seleccionadas de 2025.
-- `data/raw/`: padrón MINEDU, diccionarios y procedencia de los archivos ENAHO.
-- `resultados/`: métricas, corridas, particiones, figuras y modelo guardado.
-- `informe/Informe_Brecha_Digital_U2.pdf`: artículo de seis páginas.
+La base final contiene **19 286 personas y 34 columnas**. Se comparan logística, Random Forest, XGBoost, LightGBM y MLP; K-Means y GMM para perfiles. El MLP fue elegido por AP de validación y obtuvo ROC-AUC 0,521, AP 0,409 y F1 macro 0,518 en test. El desempeño es cercano al azar; no se propone uso para decisiones individuales.
 
-## Ejecución
+## Ejecutar
 
-Se utilizó Python 3.12. Instalar las dependencias con `pip install -r requirements.txt`, abrir Jupyter y ejecutar `notebooks/02_PROYECTO_COMPLETO.ipynb`. Las tablas y el padrón que utiliza ese notebook están incluidos en el repositorio. Se puede leer el notebook con sus resultados sin repetir el entrenamiento.
+Python 3.12. Desde la raíz, instalar `pip install -r requirements.txt` y abrir `notebooks/02_PROYECTO_COMPLETO.ipynb` en Jupyter. Sus tablas de entrada y el padrón MINEDU están incluidos. Para revisar los resultados guardados no hace falta entrenar otra vez. Semilla: 42.
 
-Para reconstruir desde los ZIP originales, seguir `data/raw/INEI/README.md` y ejecutar el notebook 01 o `python src/construir_datos.py`. Las tablas seleccionadas se mantienen como texto durante los cruces. La reconstrucción se contrastó con la base usada en los modelos; el registro está en `VALIDACION_CREACION_DATOS.json`.
+Para reconstruir desde originales, descargar los cuatro ZIP ENAHO siguiendo [estas instrucciones](data/raw/INEI/README.md) y ejecutar el notebook 01. **Esos ZIP grandes no están incluidos en GitHub**. El código genera las tablas intermedias y una nueva base en `data/processed/reconstruccion/`.
 
-## Método y resultados
+## Organización
 
-Se compararon regresión logística, Random Forest, XGBoost, LightGBM y MLP con cinco folds por conglomerado. Se reservó un conjunto de prueba separado y se ajustaron las transformaciones dentro de cada fold. Para clustering se compararon K-Means y GMM, con PCA y evaluación de silueta, Davies–Bouldin y Calinski–Harabasz. El ganador de clasificación se explicó con SHAP.
+| Carpeta | Contenido |
+|---|---|
+| `data/` | Fuentes, entradas, base final y diccionario |
+| `notebooks/` | Tres notebooks con salidas ejecutadas |
+| `src/` | Construcción, modelos, auditoría e informe |
+| `resultados/` | Corridas, métricas, predicciones, modelo y figuras |
+| `informe/` | PDF final |
+| `docs/` | Metodología, limitaciones y contraste con la guía |
 
-El MLP fue seleccionado por AP de validación. En prueba obtuvo ROC-AUC 0.521, AP 0.409 y F1 macro 0.518. Su desempeño es cercano al azar; el análisis no respalda decisiones individuales. Los perfiles y las limitaciones se explican en el informe.
+## Alcance de los datos
 
-## Fuentes y alcance
-
-Se seleccionó 2025 de archivos ENAHO panel 2021–2025. El padrón MINEDU tiene fecha de actualización 29/10/2025. El indicador de rezago usa edad declarada y grado, por lo que aproxima la referencia normativa. Dos archivos del Drive tenían HTML en lugar de datos; se utilizaron los totales disponibles del padrón. Detalles en `LIMITACIONES_DE_LAS_FUENTES.md`.
-
-La revisión de la guía está en `AUDITORIA_GUIA_PUNTO_POR_PUNTO.md`. Las instrucciones para la exposición se encuentran en `GUIA_PARA_SUSTENTAR.md`.
-
-
-## Entrega completa revisada
-
-Esta carpeta incluye los cuatro ZIP ENAHO utilizados y el padrón MINEDU. Los tres notebooks conservan salidas ejecutadas: construcción desde originales, análisis principal y auditoría. Las pruebas no eliminan las limitaciones del panel, la definición aproximada del rezago o el desempeño predictivo. Consultar CIERRE_DE_ENTREGA.md.
+Se utiliza 2025 de ENAHO panel, no se certifica equivalencia con la anual completa. El rezago se aproxima con edad declarada y grado. Los datos escolares son contexto de distrito y área, no la escuela individual. Quedan 369 registros sin contexto MINEDU; sus faltantes se imputan solo durante entrenamiento. [Método y limitaciones](docs/METODOLOGIA.md) · [Requisitos de la guía](docs/AUDITORIA_GUIA_PUNTO_POR_PUNTO.md).
